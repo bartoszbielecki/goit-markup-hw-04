@@ -1,0 +1,413 @@
+:root {
+  --font-logo: "Raleway", sans-serif;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-cloud: #f4f4fd;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-navy-blue: #2e2f42;
+  --color-cornflower: #e7e9fc;
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-navy-blue);
+  line-height: 1.2;
+}
+
+main {
+  text-align: center;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+/* SEKCJE */
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-heading {
+  line-height: 1.2;
+  color: var(--color-navy-blue);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* PASEK MENU */
+
+.navbar {
+  border-bottom: 1px solid var(--color-cornflower);
+  width: 100%;
+}
+
+.navbar nav {
+  margin: 0;
+}
+
+.navigation-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-section {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+}
+
+.nav-menu-item {
+  list-style: none;
+  padding: 24px 0;
+}
+
+/* LOGO */
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-black);
+  font-family: var(--font-logo);
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 76px;
+}
+
+.logo-span {
+  color: var(--color-iris);
+}
+
+/* LINKI MENU */
+
+.link-menu {
+  color: var(--color-navy-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link-menu:hover,
+.link-menu:active,
+.link-menu:focus {
+  color: var(--color-ocean);
+}
+
+.contact-section {
+  margin-right: 0;
+}
+
+.contact-list {
+  display: flex;
+  font-style: normal;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.link-contact {
+  color: var(--color-slate);
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.link-contact:hover,
+.link-contact:active,
+.link-contact:focus {
+  color: var(--color-ocean);
+}
+
+/* STOPKA */
+
+.footer {
+  background-color: var(--color-navy-blue);
+  width: 100%;
+  padding: 100px 0;
+}
+
+.footer-info {
+  line-height: 150%;
+  color: var(--color-cloud);
+  font-weight: 400;
+  width: 264px;
+  margin-left: 0;
+}
+
+.logo-footer {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-cloud);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+/* index.html - SEKCJA 1 */
+
+.hero-section {
+  background-color: var(--color-navy-blue);
+  padding: 188px 0;
+}
+
+.hero-header {
+  color: var(--color-cloud);
+  line-height: 107.143%;
+  letter-spacing: 1.12px;
+  font-weight: 700;
+  font-size: 56px;
+  text-align: center;
+  max-width: 496px;
+}
+
+.hero-btn {
+  background-color: var(--color-iris);
+  color: var(--color-cloud);
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 48px auto 0;
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:active,
+.hero-btn:focus {
+  background-color: var(--color-cornflower);
+  color: var(--color-ocean);
+  cursor: pointer;
+  font-size: 16px;
+}
+/* index.html - SEKCJA 2 (FEATURES) */
+
+.features-section {
+  padding: 120px 0;
+}
+
+.features-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  list-style: none;
+  text-align: left;
+}
+
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.features-title {
+  margin-bottom: 8px;
+  line-height: 1.2;
+  color: var(--color-navy-blue);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.features-info {
+  color: var(--color-slate);
+  line-height: 1.2;
+  padding: 8px 0 0;
+}
+
+/* index.html - SEKCJA 3 */
+
+.studio-projects-section {
+  padding-bottom: 120px;
+}
+
+.studio-projects-heading {
+  margin-bottom: 72px;
+  line-height: 1.2;
+  color: var(--color-navy-blue);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.studio-projects-group {
+  padding: 72px 0 0;
+  display: flex;
+  flex-basis: auto;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.studio-projects-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+/* index.html - SEKCJA 4 (TEAM) */
+
+.team-section {
+  padding: 120px 0;
+}
+
+.team-section {
+  background-color: var(--color-cloud);
+}
+
+.team-heading {
+  margin-bottom: 72px;
+  line-height: 1.2;
+  color: var(--color-navy-blue);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.team-members-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin-top: 72px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.team-item {
+  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--color-white);
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-member-card {
+  padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-member-name {
+  text-align: center;
+  margin-bottom: 8px;
+  line-height: 1.2;
+  color: var(--color-navy-blue);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.team-member-info {
+  color: var(--color-slate);
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* portfolio.html - SEKCJA 1 */
+
+.projects-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+/* portfolio.html - SEKCJA 1 (FILTRY) */
+
+.filter-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+  list-style: none;
+}
+
+.filter-btn {
+  background-color: var(--color-cloud);
+  color: var(--color-iris);
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid var(--color-cornflower);
+  padding: 12px 24px;
+}
+
+.filter-btn:hover,
+.filter-btn:active,
+.filter-btn:focus {
+  background-color: var(--color-ocean);
+  color: var(--color-white);
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* portfolio.html - SEKCJA 1 (LISTA PROJEKTÓW) */
+
+.projects-group {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.projects-item {
+  flex-basis: calc((100% - 48px) / 3);
+  text-decoration: none;
+}
+
+.projects-item:hover {
+  cursor: pointer;
+}
+
+.project-card {
+  padding: 0;
+}
+
+.project-card img {
+  display: block;
+}
+
+.project-card-info {
+  border: 1px solid var(--color-cornflower);
+  border-top: none;
+  padding: 32px 16px;
+  text-align: left;
+  max-width: 360px;
+}
+
+.filter {
+  color: var(--color-slate);
+}
+
+.project-title {
+  color: var(--color-navy-blue);
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.project-title:hover,
+.project-title:active,
+.project-title:focus {
+  text-decoration: none;
+  color: var(--color-navy-blue);
+}
