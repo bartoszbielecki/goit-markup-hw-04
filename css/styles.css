@@ -228,8 +228,19 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
+.features-icon-item {
+  padding: 24px 100px;
+  background-color: var(--color-cloud);
+  border-radius: 4px;
+}
+
+.features-icon {
+  width: 64px;
+  height: 64px;
+}
+
 .features-title {
-  margin-bottom: 8px;
+  margin: 8px 0;
   line-height: 1.2;
   color: var(--color-navy-blue);
   font-size: 20px;
@@ -239,7 +250,6 @@ img {
 .features-info {
   color: var(--color-slate);
   line-height: 1.2;
-  padding: 8px 0 0;
 }
 
 /* index.html - SEKCJA 3 */
@@ -326,6 +336,30 @@ img {
   color: var(--color-slate);
   line-height: 1.2;
   text-align: center;
+}
+
+.team-member-media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-member-media-item {
+  list-style-type: none;
+  background-color: var(--color-iris);
+  padding: 12px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  margin-top: 8px;
+}
+
+.team-member-media-icon {
+  fill: var(--color-white);
+}
+
+.team-member-media-item:hover,
+.team-member-media-item:focus {
+  cursor: pointer;
 }
 
 /* index.html - SEKCJA 5 (CUSTOMERS) */
